@@ -39,8 +39,8 @@ Explore the final web application here:
 ---
 
 ## 📸 Project Screenshots
-![Map Layout Example](images/map_layout.png)  
-![ArcGIS Pro Workflow](images/arcgis_workflow.png)  
+![Map Layout Example](images/map.png)  
+![ArcGIS Pro Workflow](images/webmap.png)  
 
 ---
 
