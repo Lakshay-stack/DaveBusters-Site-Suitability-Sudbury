@@ -1,72 +1,63 @@
-# 🎯 Dave & Buster’s Site Suitability Analysis – Greater Sudbury, ON
+# 📍 Dave & Buster’s Site Suitability Analysis – Greater Sudbury
 
-## 📍 Project Overview
-This project identifies the most suitable locations for opening a **Dave & Buster’s entertainment center** in Greater Sudbury, Ontario, using **ArcGIS Pro** and spatial analysis techniques.  
+## 📖 Project Overview
+This GIS project identifies **potential suitable sites** for constructing a Dave & Buster’s entertainment center/restaurant within the **City of Greater Sudbury**.  
 
-The analysis integrates multiple datasets, applies site suitability criteria, and produces final candidate sites with the highest potential for business success.
+Using **ArcGIS Pro** and spatial analysis techniques, multiple datasets were processed, queried, and combined to create a suitability map based on criteria such as:
+- Elevation ranges
+- Proximity to hotels/motels
+- Population density
+- Floodplain and environmental constraints
+- Parcel zoning and size
 
----
-
-## 🗺️ Methodology
-### 1. Data Collection
-- **Greater Sudbury Boundary** – defines study area  
-- **Roads Network** – identifies major access routes  
-- **Hotels & Motels** – potential nearby customer sources  
-- **Traffic Intersection Counts** – measures high-traffic zones  
-- **Zoning Information** – ensures site compliance  
-- **Environmental Layers** – avoids hazard-prone areas like floodplains  
-
-### 2. Criteria Development
-- ✅ Within **500 meters** of major roads  
-- ✅ Within **1 km** of hotels & motels  
-- ✅ High intersection traffic counts  
-- ✅ Zoned for commercial use (C2)  
-- 🚫 Outside environmental hazard zones  
-
-### 3. Geoprocessing & Analysis
-- **Buffering** – to create influence zones around features  
-- **Intersect & Union** – to combine criteria layers  
-- **Attribute Queries** – to filter eligible areas  
-- **Final Selection** – ranking sites based on multiple weighted factors  
+The final output is an **interactive ArcGIS Web App** for easy visualization and exploration.
 
 ---
 
-## 📊 Results
-- **Number of Candidate Sites:** 3  
-- **Top Site:** Parcel ID `43529` – optimal access, high visibility, strong surrounding businesses  
-- **Map Output:**  
-  ![Final Map](Maps/final_map.png)  
+## 🗂 Data Sources
+- **DEM (Digital Elevation Model)** – City of Greater Sudbury GIS Data
+- **Hotels & Motels** – City of Greater Sudbury
+- **Census Population Data** – 2016 Census Dissemination Blocks
+- **Zoning & Parcels** – City of Greater Sudbury
+- **Floodplain Data** – Environmental datasets
 
 ---
 
-## 🛠 Tools Used
-- **ArcGIS Pro** – geoprocessing, map layouts, and spatial analysis  
-- **ArcGIS Online** – web map publishing  
-- **Microsoft Excel** – data review & cleaning  
-- **GitHub** – version control & project showcase  
+## 🛠 Tools & Techniques
+- **ArcGIS Pro** – Spatial Analysis & Geoprocessing
+- **Spatial Analyst Tools** – Reclassify, Buffer, Select by Attributes, Select by Location
+- **Data Management Tools** – Merge, Dissolve, Union
+- **Map Layout Design** – Inset maps, labels, and custom symbology
+- **ArcGIS Online** – Web App creation and publishing
 
 ---
 
-## 🌐 Live Web Map
-[Click here to view on ArcGIS Online](https://www.arcgis.com/home/webmap/viewer.html) <!-- Replace with your real link -->
+## 🌐 View the Interactive Map
+Explore the final web application here:  
+[**Dave & Buster’s Potential Suitable Sites – Greater Sudbury**](https://cambriandata.maps.arcgis.com/apps/instant/insets/index.html?appid=4e8b0cde81d64acf90fa0436cdebff6d)
 
 ---
 
-## 📂 Repository Structure
-```
-DaveAndBusters_SiteSuitability/
-│
-├── Maps/                   # Exported PNG/JPEG map images
-├── Data/                   # Public or sample datasets only
-├── README.md               # Project documentation
-├── ProjectReport.pdf       # Optional – full write-up
-└── .gitignore              # Ignore unnecessary local files
-```
+## 📸 Project Screenshots
+![Map Layout Example](images/map_layout.png)  
+![ArcGIS Pro Workflow](images/arcgis_workflow.png)  
 
 ---
 
-## 👤 Author
-**Lakshay Girdher**  
-📧 Email: lakshay.girdher@example.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/lakshay-girdher)  
-🔗 [Portfolio Website](https://yourportfolio.com)
+## 📄 Project Report
+A detailed explanation of the process, tools, and findings is available in the [**Project Report**](projectreport.pdf).
+
+---
+
+## 👤 About Me
+**Lakshay Girdher** – GIS & Data Analysis Student | Cambrian College  
+
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/lakshay-girdher-a837602b7)  
+
+---
+
+## 📜 License
+This project is for educational purposes only and uses open GIS datasets provided by the **City of Greater Sudbury**.
+
+---
+
